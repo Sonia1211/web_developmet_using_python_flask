@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title></title>
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<form action="{{url_for('editData',register_id=register.id)}}" method="POST">
+			<div class="form-group">
+    <label for="id">Id</label>
+    <input type="text" class="form-control" id="id" placeholder="Enter Id" name="id" value="{{register.id}}">
+	</div>
+		<div class="form-group">
+    <label for="Name">Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name"value="{{register.name}}">
+	</div>
+	<div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"value="{{register.email}}">
+	</div>
+	<div class="form-group">
+    <label for="email">Designation</label>
+    <input type="text" class="form-control" id="des" placeholder="Enter Designation" name="des"value="{{register.des}}">
+	</div>
+    
+    <button type="submit" class="btn btn-primary" value="Edit">Submit</button>
+  </form>
+	</body>
+</html>

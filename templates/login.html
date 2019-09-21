@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Login:::</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+
+		<form action="{{url_for('login')}}" method="POST">
+		<div style="background-color: grey">
+			<h1 style="color: indigo;" align="center" ><i>APSSDC login</i></h1>
+		</div>
+		<div style="background-image: url("\static\2.jpeg")">
+		<table align="center">
+		<tr>
+		<div class="form-group">
+    		<td><label for="email">Username: </label></td>
+    		<td><input type="email" class="form-control" id="username" placeholder="Enter email" name="email"></td>
+		</div>
+		</tr>
+		<tr>
+		<div class="form-group">
+    		<td><label for="password">Password: </label></td>
+    		<td><input type="password" class="form-control" id="password" placeholder="Enter your Password" name="password"></td>
+    	</div>
+    	</tr>
+    	<tr><td>
+    	<input type="submit" align="center" ></td>
+    	</tr>
+    	</table>
+    </div>
+  		</form>
+	</body>
+</html>
